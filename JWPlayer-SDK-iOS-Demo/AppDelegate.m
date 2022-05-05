@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <JWPlayer_iOS_SDK/JWPlayerController.h>
+#import <JWPlayerKit/JWPlayerKit.h>
 
 @interface AppDelegate ()
 
@@ -16,8 +16,8 @@
 @implementation AppDelegate
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    NSLog(@"SDK version: %@", JWPlayerController.SDKVersion);
+        
+    [JWPlayerKitLicense setLicenseKey: @"UpXncXa5/f97eyfgs8pOfZ6SQaGqA046djwe1VIdweLb5+Oa"];
 
     return YES;
 }

@@ -7,7 +7,6 @@
 //
 
 #import "InitialViewController.h"
-#import "JWPlayer_SDK_iOS_Demo-Swift.h"
 
 
 @interface InitialViewController ()
