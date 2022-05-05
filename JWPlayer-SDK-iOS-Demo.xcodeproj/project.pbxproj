@@ -15,6 +15,11 @@
 		6A7D08F71A5DAFD600C4E749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D08F61A5DAFD600C4E749 /* AppDelegate.m */; };
 		6A7D08FA1A5DAFD600C4E749 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D08F91A5DAFD600C4E749 /* InitialViewController.m */; };
 		6A7D08FD1A5DAFD600C4E749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A7D08FB1A5DAFD600C4E749 /* Main.storyboard */; };
+		700397662823BD84007A595F /* cast_connecting2.png in Resources */ = {isa = PBXBuildFile; fileRef = 700397612823BD84007A595F /* cast_connecting2.png */; };
+		700397672823BD84007A595F /* cast_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 700397622823BD84007A595F /* cast_on.png */; };
+		700397682823BD84007A595F /* cast_connecting0.png in Resources */ = {isa = PBXBuildFile; fileRef = 700397632823BD84007A595F /* cast_connecting0.png */; };
+		700397692823BD84007A595F /* cast_connecting1.png in Resources */ = {isa = PBXBuildFile; fileRef = 700397642823BD84007A595F /* cast_connecting1.png */; };
+		7003976A2823BD84007A595F /* cast_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 700397652823BD84007A595F /* cast_off.png */; };
 		A25B418FFC7CE241937DBDAC /* Pods_JWPlayer_SDK_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E59D2982120A9B78F61F15 /* Pods_JWPlayer_SDK_iOS_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,11 @@
 		6A7D08F91A5DAFD600C4E749 /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		6A7D08FC1A5DAFD600C4E749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A7D08FE1A5DAFD600C4E749 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		700397612823BD84007A595F /* cast_connecting2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting2.png; sourceTree = "<group>"; };
+		700397622823BD84007A595F /* cast_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_on.png; sourceTree = "<group>"; };
+		700397632823BD84007A595F /* cast_connecting0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting0.png; sourceTree = "<group>"; };
+		700397642823BD84007A595F /* cast_connecting1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_connecting1.png; sourceTree = "<group>"; };
+		700397652823BD84007A595F /* cast_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cast_off.png; sourceTree = "<group>"; };
 		8AEA39F61AFAAE22008A8C8A /* JWPlayer-SDK-iOS-Demo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JWPlayer-SDK-iOS-Demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		99E59D2982120A9B78F61F15 /* Pods_JWPlayer_SDK_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWPlayer_SDK_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3F39B2499D0E23BF81C99B /* Pods-JWPlayer-SDK-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWPlayer-SDK-iOS-Demo.debug.xcconfig"; path = "Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +115,8 @@
 		6A7D08F01A5DAFD600C4E749 /* JWPlayer-SDK-iOS-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				7003976B2823F021007A595F /* Services */,
+				700397602823BD53007A595F /* images */,
 				6A7D08FB1A5DAFD600C4E749 /* Main.storyboard */,
 				6A7D08F51A5DAFD600C4E749 /* AppDelegate.h */,
 				6A7D08F61A5DAFD600C4E749 /* AppDelegate.m */,
@@ -116,6 +128,25 @@
 				6A7D08F31A5DAFD600C4E749 /* main.m */,
 			);
 			path = "JWPlayer-SDK-iOS-Demo";
+			sourceTree = "<group>";
+		};
+		700397602823BD53007A595F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				700397632823BD84007A595F /* cast_connecting0.png */,
+				700397642823BD84007A595F /* cast_connecting1.png */,
+				700397612823BD84007A595F /* cast_connecting2.png */,
+				700397652823BD84007A595F /* cast_off.png */,
+				700397622823BD84007A595F /* cast_on.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		7003976B2823F021007A595F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		9769E5CB1DA8034E00BEF7FF /* Frameworks */ = {
@@ -139,6 +170,7 @@
 				6A7D08EC1A5DAFD600C4E749 /* Resources */,
 				B51E086A225FF6FF004E034C /* Embed Frameworks */,
 				4926569AC71BA10294DB43BA /* [CP] Embed Pods Frameworks */,
+				28ABC7623A84113D211D7ECA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,7 +194,7 @@
 				TargetAttributes = {
 					6A7D08ED1A5DAFD600C4E749 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 8VC65F749H;
+						DevelopmentTeam = 2VQT2XM6A8;
 						LastSwiftMigration = 1010;
 					};
 				};
@@ -192,14 +224,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7D08FD1A5DAFD600C4E749 /* Main.storyboard in Resources */,
+				700397682823BD84007A595F /* cast_connecting0.png in Resources */,
 				11AD69FB2458D0C500802AC4 /* Launch Screen.storyboard in Resources */,
 				11C8120A223ADDF400222E98 /* Images.xcassets in Resources */,
+				7003976A2823BD84007A595F /* cast_off.png in Resources */,
+				700397692823BD84007A595F /* cast_connecting1.png in Resources */,
+				700397672823BD84007A595F /* cast_on.png in Resources */,
+				700397662823BD84007A595F /* cast_connecting2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		28ABC7623A84113D211D7ECA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo-resources.sh",
+				"${PODS_ROOT}/google-cast-sdk-no-bluetooth/GoogleCastSDK-ios-4.7.0_static/GoogleCast.framework/GoogleCastCoreResources.bundle",
+				"${PODS_ROOT}/google-cast-sdk-no-bluetooth/GoogleCastSDK-ios-4.7.0_static/GoogleCast.framework/GoogleCastUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastCoreResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleCastUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3A5E7497CE05548C3243BB93 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,10 +287,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JWPlayer-SDK-iOS-Demo/Pods-JWPlayer-SDK-iOS-Demo-frameworks.sh",
 				"${PODS_ROOT}/JWPlayer-SDK/JWPlayer_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWPlayer_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -395,7 +454,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8VC65F749H;
+				DEVELOPMENT_TEAM = 2VQT2XM6A8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,7 +488,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 8VC65F749H;
+				DEVELOPMENT_TEAM = 2VQT2XM6A8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

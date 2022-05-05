@@ -9,17 +9,42 @@
 #import "AppDelegate.h"
 #import <JWPlayer_iOS_SDK/JWPlayerController.h>
 
-@interface AppDelegate ()
-
-@end
-
 @implementation AppDelegate
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     NSLog(@"SDK version: %@", JWPlayerController.SDKVersion);
+    
+    GCKDiscoveryCriteria *criteria = [[GCKDiscoveryCriteria alloc] initWithApplicationID:@"20B73138"];
+    GCKCastOptions *options = [[GCKCastOptions alloc] initWithDiscoveryCriteria:criteria];
+    [GCKCastContext setSharedInstanceWithOptions:options];
+    
+    [GCKLogger sharedInstance].delegate = self;
+    GCKLoggerFilter *filter = [[GCKLoggerFilter alloc] init];
+    [filter setMinimumLevel:GCKLoggerLevelVerbose];
+    [GCKLogger sharedInstance].filter = filter;
+    
+    // Wrap main view in the GCKUICastContainerViewController and display the mini controller.
+    UIStoryboard *appStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *navigationController =
+            [appStoryboard instantiateViewControllerWithIdentifier:@"UINavigationController-hC9-kd-PEj"];
+    GCKUICastContainerViewController *castContainerVC =
+            [[GCKCastContext sharedInstance] createCastContainerControllerForViewController:navigationController];
+    castContainerVC.miniMediaControlsItemEnabled = YES;
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.rootViewController = castContainerVC;
+    [self.window makeKeyAndVisible];
+    
+    [GCKCastContext sharedInstance].useDefaultExpandedMediaControls = YES;
 
     return YES;
+}
+
+- (void)logMessage:(NSString *)message
+           atLevel:(GCKLoggerLevel)level
+      fromFunction:(NSString *)function
+          location:(NSString *)location {
+    NSLog(@"%@ - %@, %@", function, message, location);
 }
 
 @end
