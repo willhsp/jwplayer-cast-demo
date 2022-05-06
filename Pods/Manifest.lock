@@ -1,16 +1,27 @@
 PODS:
+  - google-cast-sdk-no-bluetooth (4.7.0):
+    - google-cast-sdk-no-bluetooth/Core (= 4.7.0)
+    - Protobuf (~> 3.13)
+  - google-cast-sdk-no-bluetooth/Core (4.7.0):
+    - Protobuf (~> 3.13)
   - JWPlayerKit (4.5.2)
+  - Protobuf (3.20.1)
 
 DEPENDENCIES:
+  - google-cast-sdk-no-bluetooth (~> 4.7.0)
   - JWPlayerKit (~> 4.5.0)
 
 SPEC REPOS:
   trunk:
+    - google-cast-sdk-no-bluetooth
     - JWPlayerKit
+    - Protobuf
 
 SPEC CHECKSUMS:
+  google-cast-sdk-no-bluetooth: 5313156110d6e71fa336f6d742f1ee641e91fdca
   JWPlayerKit: a64a4c1aa2c66e8c8aad735305614a7774eb54f9
+  Protobuf: b60ec2f51ad74765f44d0c09d2e0579d7de21745
 
-PODFILE CHECKSUM: e573b6ec663b48e9458b58cf1dc6887254130734
+PODFILE CHECKSUM: 5c01fcbd40865498475f158b8c2c2eaf805d2fa9
 
 COCOAPODS: 1.11.2

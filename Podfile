@@ -7,4 +7,5 @@ target 'JWPlayer-SDK-iOS-Demo' do
 
   # Pods for JWPlayer-SDK-iOS-Demo
   pod 'JWPlayerKit', '~> 4.5.0'
+  pod 'google-cast-sdk-no-bluetooth', '~> 4.7.0'
 end
